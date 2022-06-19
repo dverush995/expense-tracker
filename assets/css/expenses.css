@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #192d86;
+  color: #fff;
+  min-height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  /* overflow: hidden; */
+}
+header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 5rem 0;
+}
+.create-expense {
+  background-color: #fff;
+  color: #1d3ea7;
+  padding: 2rem 4rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+}
+.create-expense h2 {
+  color: #1d3ea7;
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  color: #1d3ea7;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.expense-name,
+.expense-date,
+.expense-amount {
+  color: #7d859f;
+  border: 1px solid #192d86;
+  border-radius: 2px;
+  padding: 1rem 0.5rem;
+  margin-bottom: 2rem;
+}
+.expense-date {
+  position: relative;
+  width: 100%;
+}
+.uil-calender {
+  position: absolute;
+  top: 79%;
+  right: 22%;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+.expense-amount {
+  padding: 0.5rem;
+  width: 50%;
+  margin-bottom: 3rem;
+}
+.add-expense-button {
+  background-color: #1d3ea7;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  width: 60%;
+  position: relative;
+  left: 50%;
+  cursor: pointer;
+  transform: translateX(-50%);
+}
+.add-expense-button:hover,
+.add-expense-button:focus {
+  background-color: #ccc;
+  color: #1d3ea7;
+}
+.expenses-items {
+  background-color: #fff;
+  color: #1d3ea7;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+.expenses-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.expenses-table-head-item {
+  text-align: center;
+}
+.expenses-table-head-item,
+.expenses-table-item {
+  border: 1px solid #7d859f;
+  padding: 0.5rem;
+}
+.expenses-table-head {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.expenses-table-item,
+.expenses-empty-row {
+  background-color: #ccc;
+  color: #1e1e1e;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.expenses-empty-row {
+  padding: 0.5rem;
+}
+.expenses-table-head-item,
+.expenses-table-item-date,
+.expenses-table-item-amount,
+.expenses-table-item-delete {
+  text-align: center;
+}
+.expenses-table-item-name {
+  width: 50%;
+}
+.expenses-table-item-delete {
+  cursor: pointer;
+}
+@media (min-width: 980px) {
+  .create-expense {
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .expense-name {
+    padding-left: 1rem;
+  }
+  .expenses-items {
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .expenses-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .expenses-info label {
+    text-align: center;
+  }
+  .expense-date {
+    margin-left: -13rem;
+    flex: 0.2;
+    height: max-content;
+  }
+  .uil-calender {
+    font-size: 1.6rem;
+    top: 62%;
+    left: 48%;
+    transform: translateX(-47%);
+  }
+  .expense-amount {
+    flex: 0.2;
+    height: max-content;
+    margin-bottom: 0;
+    margin-left: -13rem;
+    padding: 1rem;
+  }
+  .expenses-table-head {
+    font-size: 1.6rem;
+  }
+  .expenses-table-item {
+    font-size: 1.4rem;
+  }
+  .expenses-table-item-name {
+    padding-left: 1rem;
+  }
+  .expenses-empty-row {
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+  }
+}

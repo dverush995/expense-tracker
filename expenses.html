@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="assets/css/expenses.css" />
+    <title>Expense Tracker</title>
+  </head>
+  <body>
+    <header>
+      <h1>Expense Tracker</h1>
+    </header>
+    <div class="container">
+      <div class="create-expense">
+        <h2 class="add-item">Add a new item</h2>
+        <form autocomplete="off">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" class="expense-name" placeholder="Where was the expenses made?" required />
+
+          <div class="expenses-info">
+            <!-- prettier-ignore -->
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date" class="expense-date" placeholder="23/06/2021" required />
+            <i class="uil uil-calender"></i>
+
+            <label for="amount">Amount:</label>
+            <input type="number" name="amount" id="amount" class="expense-amount" placeholder="$ 10" required />
+          </div>
+
+          <button type="submit" class="add-expense-button">Add expense</button>
+        </form>
+      </div>
+      <div class="expenses-items">
+        <table class="expenses-table">
+          <thead class="expenses-table-head">
+              <th class="expenses-table-head-item">Name</th>
+              <th class="expenses-table-head-item expenses-table-head-date">Date</th>
+              <th class="expenses-table-head-item expenses-table-head-amount">Amount</th>
+              <th class="expenses-table-head-item expenses-table-head-delete">Delete</th>
+          </thead>
+          <tbody class="expenses-table-body">
+            <tr class="expenses-table-row">
+              <td class="expenses-empty-row" colspan="4">No expenses added yet</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="assets/javascript/expenses.js"></script>
+  </body>
+</html>

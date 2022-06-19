@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #192d86;
+  color: #fff;
+  min-height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  max-width: 200px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.expense-tracker {
+  margin: 3rem 0;
+}
+.expense-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.expense-tracker-card,
+.expense-tracker-card-two,
+.expense-tracker-card-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #1d3ea7;
+  padding: 2rem 2rem;
+  margin: 2rem 0;
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  max-width: 100%;
+}
+.expense-tracker-card img,
+.expense-tracker-card-two img,
+.expense-tracker-card-three img {
+  margin-bottom: 2rem;
+}
+.card-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.card-info {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #727890;
+  text-align: center;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+.next-card,
+.next-card-start,
+.previous-card,
+.previous-card-last,
+.expense-log {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+.next-card-start {
+  left: 40%;
+}
+.previous-card {
+  left: -50%;
+}
+.previous-card-last {
+  left: -20%;
+}
+.expense-log {
+  background-color: #1d3ea7;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  left: 30%;
+}
+.expense-tracker-card-hidden,
+.expense-tracker-card-hidden {
+  display: none;
+}
+@media (min-width: 980px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+  .expense-title {
+    font-size: 3.2rem;
+  }
+  .expense-image {
+    max-width: 350px;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    width: 60%;
+  }
+}
